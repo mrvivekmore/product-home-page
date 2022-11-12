@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff6347;
+  --heading-color: #222;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------ */
+/* ------- REUSABLE CSS --------- */
+/* ------------------------------ */
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.action-btn {
+  padding: 16px 30px;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.action-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+nav {
+  min-height: 15vh;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-item {
+  color: var(--heading-color);
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-item:hover {
+  color: var(--primary-color);
+}
+
+.active-nav-item {
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.search-img {
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+
+.menu-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* ------------------------------ */
+/* ------- HERO SECTION --------- */
+/* ------------------------------ */
+
+.hero-section {
+  padding: 50px 0;
+}
+
+.hero-section-div {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: end;
+}
+
+.left-section h3 {
+  color: var(--heading-color);
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.left-section h3 img {
+  color: #333;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.left-section h1 {
+  color: #000;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 58px;
+  font-weight: 800;
+  margin: 10px 0 40px;
+}
+
+.sub-headlines h5 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 20px 70px;
+}
+
+.text {
+  color: #777;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 50px 40px 40px 0;
+}
+
+.action-btns {
+  display: flex;
+  gap: 30px;
+}
+
+.right-section {
+  position: relative;
+  text-align: center;
+}
+
+.discount {
+  position: absolute;
+  width: 180px;
+  top: 40%;
+  left: -60px;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.3));
+}
+
+.discount-content {
+  position: absolute;
+  top: 49%;
+  left: -20px;
+  font-family: "Mochiy Pop One", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.discount-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.discount-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.headphone-img {
+  width: 100%;
+  margin-top: -60px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.yellow-dot {
+  background-color: #fff700;
+}
+
+.tomato-dot {
+  background-color: #ff6347;
+}
+
+.black-dot {
+  background-color: #000;
+}
